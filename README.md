@@ -1,1 +1,1 @@
-# qa-zadatak-smartcat
+# qa-zadatak-smartcat 
