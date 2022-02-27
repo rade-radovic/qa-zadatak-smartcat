@@ -10,8 +10,8 @@ describe('Allowance', () => {
     before('Get Allowance Values and Costs', () => {
         createShift.createShifts(createShiftData.shiftsAndUsersIds[4].shiftIds, createShiftData.shiftsAndUsersIds[4].userIds).then((response) => {
             generalFunctions.checkStatus(response, 200)
-            allowanceValueArray = allowance.getAllowanceParametersArray(response, "value")
-            allowanceCostArray = allowance.getAllowanceParametersArray(response, "cost")
+            allowanceValueArray = allowance.getAllowanceAndAwardParametersArray(response, "allowance", "value")
+            allowanceCostArray = allowance.getAllowanceAndAwardParametersArray(response, "allowance", "cost")
         })
     })
 
@@ -39,4 +39,5 @@ describe('Allowance', () => {
         generalFunctions.logAverageFromArray(allowanceCostArray, "Allowance Costs")
     })
 
+    
 })

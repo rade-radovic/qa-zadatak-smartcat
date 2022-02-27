@@ -48,5 +48,12 @@ module.exports = {
         let totalArray1 = this.sumAllElementsInArray(array)
         let average = totalArray1 / array.length
         console.log(`The average of ${title} is ${average}`)
+    },
+
+    returnNumberIfItemsInAnArray(array) {
+        const counts = {}
+        const sampleArray = array
+        sampleArray.forEach(function (x) { counts[x] = (counts[x] || 0) + 1})
+        return counts
     }
 }

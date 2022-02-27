@@ -2,14 +2,14 @@
 
 module.exports = {
 
-    getAllowanceParametersArray(response, key) {
-        let allowanceParametersArray = []
+    getAllowanceAndAwardParametersArray(response, key1, key2) {
+        let parametersArray = []
         response.body.forEach(shift => {
-            shift.allowance.forEach(allowance => {
-                allowanceParametersArray.push(allowance[key])
+            shift[key1].forEach(allowance => {
+                parametersArray.push(allowance[key2])
             })
         })
-        return allowanceParametersArray
+        return parametersArray
     }
 
 }
