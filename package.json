@@ -1,0 +1,22 @@
+{
+  "name": "qa-zadatak-smartcat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rade-radovic/qa-zadatak-smartcat.git"
+  },
+  "author": "rade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rade-radovic/qa-zadatak-smartcat/issues"
+  },
+  "homepage": "https://github.com/rade-radovic/qa-zadatak-smartcat#readme",
+  "devDependencies": {
+    "cypress": "^9.5.0"
+  }
+}

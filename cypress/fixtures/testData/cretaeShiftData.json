@@ -1,0 +1,56 @@
+{
+  "shiftsAndUsersIds" : [
+    {
+      "shiftIds" : "1",
+      "userIds" : "1",
+      "expectedNumberOfShifts" : "1"
+    },
+    {
+      "shiftIds" : "1,2",
+      "userIds" : "1",
+      "expectedNumberOfShifts" : "2"
+    },
+    {
+      "shiftIds" : "1,2",
+      "userIds" : "1,2",
+      "expectedNumberOfShifts" : "4"
+    },
+    {
+      "shiftIds" : "1",
+      "userIds" : "1,2",
+      "expectedNumberOfShifts" : "2"
+    },
+    {
+      "shiftIds" : "1,2,3",
+      "userIds" : "1,2,3",
+      "expectedNumberOfShifts" : "9"
+    }
+  ],
+
+  "generalParameters" : [
+    {
+      "key" : "date",
+      "value" : "2021-03-19"
+    },
+    {
+      "key" : "tag",
+      "value" : "tag"
+    },
+    {
+      "key" : "status",
+      "value" : "status"
+    },
+    {
+      "key" : "metadata",
+      "value" : "metadata"
+    },
+    {
+      "key" : "approved_by",
+      "value" : "approved_by"
+    },
+    {
+      "key" : "approved_at",
+      "value" : "2021-03-19"
+    }
+  ]
+}
